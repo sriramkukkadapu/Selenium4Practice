@@ -15,6 +15,7 @@ public class LoginTest extends TestInitializer {
 	  Reporter.log("Entering email",true);
 	  websiteHome.getEmailTextbox().sendKeys("sriramkukkadapu@gmail.com");
 	  Reporter.log("Entering password",true);
+	  
 	  websiteHome.getPasswordTextbox().sendKeys("sriramk1");
 	  Reporter.log("Clicking Login button",true);
 	  websiteHome.getLoginButton().click();
