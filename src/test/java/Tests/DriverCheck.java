@@ -12,6 +12,5 @@ public class DriverCheck {
 		WebDriver driver=driverClassObj.openBrowser();
 		
 		driverClassObj.closeBrowser(driver);
-		//dummy comment
 	}
 }
