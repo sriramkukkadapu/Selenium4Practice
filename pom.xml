@@ -5,10 +5,37 @@
   <version>0.0.1-SNAPSHOT</version>
   
 <dependencies>
-  <dependency>
+<!--   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>3.12.0</version>
+</dependency> -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.0.0-alpha-3</version>
+</dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.6</version>
+</dependency>
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>4.0.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>com.qeagle</groupId>
+  <artifactId>DevTools-Selenium</artifactId>
+  <version>1.2.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
 </dependency>
 </dependencies>
 </project>
