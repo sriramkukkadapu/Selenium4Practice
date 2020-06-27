@@ -19,6 +19,8 @@ public class WebDriverManagerExample {
   @BeforeMethod
   public void setUp() {
 	  WebDriverManager.chromedriver().setup();
+	  WebDriverManager.chromedriver().browserVersion("82.0").arch64().setup();
+	  
 	  driver=new ChromeDriver();
 	  //WebDriverManager.firefoxdriver().setup();
 	  //driver=new FirefoxDriver();

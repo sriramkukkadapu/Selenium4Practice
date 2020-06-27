@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12194" started-at="2020-05-24T08:10:11Z" finished-at="2020-05-24T08:10:23Z">
+  <suite name="Default suite" duration-ms="5822" started-at="2020-06-08T12:22:14Z" finished-at="2020-06-08T12:22:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12194" started-at="2020-05-24T08:10:11Z" finished-at="2020-05-24T08:10:23Z">
-      <class name="Tests.FullPageScreenshot_Example">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.FullPageScreenshot_Example@66480dd7]" name="setUp" is-config="true" duration-ms="7624" started-at="2020-05-24T08:10:11Z" finished-at="2020-05-24T08:10:19Z">
+    <test name="Default test" duration-ms="5822" started-at="2020-06-08T12:22:14Z" finished-at="2020-06-08T12:22:20Z">
+      <class name="Selenium4.WebDriverManagerExample">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Selenium4.WebDriverManagerExample@6fc6f14e]" name="setUp" is-config="true" duration-ms="3745" started-at="2020-06-08T12:22:14Z" finished-at="2020-06-08T12:22:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFunction()[pri:0, instance:Tests.FullPageScreenshot_Example@66480dd7]" name="testFunction" duration-ms="4240" started-at="2020-05-24T08:10:19Z" finished-at="2020-05-24T08:10:23Z">
+        <test-method status="PASS" signature="testFunction()[pri:0, instance:Selenium4.WebDriverManagerExample@6fc6f14e]" name="testFunction" duration-ms="1833" started-at="2020-06-08T12:22:18Z" finished-at="2020-06-08T12:22:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFunction -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.FullPageScreenshot_Example@66480dd7]" name="tearDown" is-config="true" duration-ms="308" started-at="2020-05-24T08:10:23Z" finished-at="2020-05-24T08:10:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Selenium4.WebDriverManagerExample@6fc6f14e]" name="tearDown" is-config="true" duration-ms="213" started-at="2020-06-08T12:22:20Z" finished-at="2020-06-08T12:22:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.FullPageScreenshot_Example -->
+      </class> <!-- Selenium4.WebDriverManagerExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

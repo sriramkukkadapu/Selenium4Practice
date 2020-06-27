@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Default suite" parallel="classes">
   <test thread-count="5" verbose="2" name="Default test">
-    <classes>
+    <classes> 
       <class name="Tests.LoginTest1"/>
       <class name="Tests.LoginTest2"/>
     </classes>

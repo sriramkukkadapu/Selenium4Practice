@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.Log;
 import org.openqa.selenium.devtools.security.Security;
 
 import com.qeagle.devtools.protocol.types.log.LogEntry;

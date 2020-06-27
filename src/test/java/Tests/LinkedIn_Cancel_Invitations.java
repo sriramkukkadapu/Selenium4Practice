@@ -40,8 +40,7 @@ public static void main(String args[]) throws InterruptedException
 			 driver.quit();
 
 	 }
-	  }
-	  
+	  }	  
 	  driver.quit();
 	  
 }
