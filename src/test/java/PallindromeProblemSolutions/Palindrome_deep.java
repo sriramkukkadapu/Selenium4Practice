@@ -1,4 +1,4 @@
-package Tests;
+package PallindromeProblemSolutions;
 
 
 	import java.util.Scanner;

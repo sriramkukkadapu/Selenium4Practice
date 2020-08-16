@@ -1,4 +1,4 @@
-package Tests;
+package PallindromeProblemSolutions;
 
 public class PalindromCheck {
 
