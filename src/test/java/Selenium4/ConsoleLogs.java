@@ -11,9 +11,9 @@ public class ConsoleLogs {
 public static void main(String args[]) throws InterruptedException
 {
 	WebDriverManager.chromedriver().setup();
-	ChromeDriver driver=new ChromeDriver();
+	WebDriver driver=new ChromeDriver();
 	
-	DevTools devTools = driver.getDevTools();
+	DevTools devTools = ((ChromeDriver) driver).getDevTools();
 	devTools.createSession();
 	devTools.send(Log.enable());
 	devTools.addListener(Log.entryAdded(), 
