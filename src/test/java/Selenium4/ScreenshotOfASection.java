@@ -18,8 +18,8 @@ public class ScreenshotOfASection {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 		driver.get("http://omayo.blogspot.com/");
 		
 		WebElement ele=driver.findElement(By.id("LinkList1"));

@@ -19,8 +19,8 @@ public class newWindow_Selenium4 {
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 		driver.get("https://www.amazon.in");
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("OnePlys 7T");
 		

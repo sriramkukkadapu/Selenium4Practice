@@ -13,7 +13,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.0.0-alpha-3</version>
+    <version>4.1.0</version>
 </dependency>
 <dependency>
     <groupId>mysql</groupId>
@@ -23,14 +23,16 @@
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>4.0.0</version>
+    <version>5.0.3</version>
     <scope>test</scope>
 </dependency>
+<!--
 <dependency>
   <groupId>com.qeagle</groupId>
   <artifactId>DevTools-Selenium</artifactId>
   <version>1.2.1</version>
 </dependency>
+-->
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
     <groupId>commons-io</groupId>

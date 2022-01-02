@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5822" started-at="2020-06-08T12:22:14Z" finished-at="2020-06-08T12:22:20Z">
+  <suite name="Default suite" duration-ms="46668" started-at="2022-01-02T01:22:49 CST" finished-at="2022-01-02T01:23:36 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5822" started-at="2020-06-08T12:22:14Z" finished-at="2020-06-08T12:22:20Z">
-      <class name="Selenium4.WebDriverManagerExample">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Selenium4.WebDriverManagerExample@6fc6f14e]" name="setUp" is-config="true" duration-ms="3745" started-at="2020-06-08T12:22:14Z" finished-at="2020-06-08T12:22:18Z">
+    <test name="Default test" duration-ms="46668" started-at="2022-01-02T01:22:49 CST" finished-at="2022-01-02T01:23:36 CST">
+      <class name="Selenium4.EmulateSlowNetwork">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Selenium4.EmulateSlowNetwork@69b0fd6f]" name="setup" is-config="true" duration-ms="1772" started-at="2022-01-02T01:22:49 CST" finished-at="2022-01-02T01:22:51 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testFunction()[pri:0, instance:Selenium4.WebDriverManagerExample@6fc6f14e]" name="testFunction" duration-ms="1833" started-at="2020-06-08T12:22:18Z" finished-at="2020-06-08T12:22:20Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="normalNetwork()[pri:1, instance:Selenium4.EmulateSlowNetwork@69b0fd6f]" name="normalNetwork" duration-ms="2110" started-at="2022-01-02T01:22:51 CST" finished-at="2022-01-02T01:22:53 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFunction -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Selenium4.WebDriverManagerExample@6fc6f14e]" name="tearDown" is-config="true" duration-ms="213" started-at="2020-06-08T12:22:20Z" finished-at="2020-06-08T12:22:20Z">
+        </test-method> <!-- normalNetwork -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Selenium4.EmulateSlowNetwork@69b0fd6f]" name="close" is-config="true" duration-ms="137" started-at="2022-01-02T01:22:53 CST" finished-at="2022-01-02T01:22:53 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Selenium4.WebDriverManagerExample -->
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:Selenium4.EmulateSlowNetwork@69b0fd6f]" name="setup" is-config="true" duration-ms="919" started-at="2022-01-02T01:22:53 CST" finished-at="2022-01-02T01:22:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="slowNetwork()[pri:2, instance:Selenium4.EmulateSlowNetwork@69b0fd6f]" name="slowNetwork" duration-ms="41565" started-at="2022-01-02T01:22:54 CST" finished-at="2022-01-02T01:23:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- slowNetwork -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Selenium4.EmulateSlowNetwork@69b0fd6f]" name="close" is-config="true" duration-ms="136" started-at="2022-01-02T01:23:36 CST" finished-at="2022-01-02T01:23:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Selenium4.EmulateSlowNetwork -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

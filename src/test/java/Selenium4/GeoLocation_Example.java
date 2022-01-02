@@ -31,17 +31,18 @@ public class GeoLocation_Example {
 		
 		driver.get("https://oldnavy.gap.com/stores");
 		
-		Map<String,Object> screenshotParameters = new HashMap<String,Object>();
-		screenshotParameters.put("format", ".png");
+//		Map<String,Object> screenshotParameters = new HashMap<String,Object>();
+//		screenshotParameters.put("format", ".png");
 		
-		driver.get("https://www.google.com");
-		Map<String,Object> resultMap=driver.executeCdpCommand("Page.captureScreenshot", screenshotParameters);
-		System.out.println(resultMap.get("data").toString());
-		byte[] data = Base64.decodeBase64(resultMap.get("data").toString());
-		try (OutputStream stream = new FileOutputStream(System.getProperty("user.dir")+"/fullpage.png")) {
-		    stream.write(data);
-		}
+//		driver.get("https://www.amazon.in");
+//		Map<String,Object> resultMap=driver.executeCdpCommand("Page.captureScreenshot", screenshotParameters);
+//		System.out.println(resultMap.get("data").toString());
+//		byte[] data = Base64.decodeBase64(resultMap.get("data").toString());
+//		try (OutputStream stream = new FileOutputStream(System.getProperty("user.dir")+"/fullpage.png")) {
+//		    stream.write(data);
+//		}
 		
+		driver.close();
 		
 	}
 }
