@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="SeleniumGrid.Three">
+        <methods>
+          <include name="setup"/>
+          <include name="testThree"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- SeleniumGrid.Three -->
+      <class name="SeleniumGrid.One">
+        <methods>
+          <include name="testOne"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- SeleniumGrid.One -->
+      <class name="SeleniumGrid.Two">
+        <methods>
+          <include name="testTwo"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- SeleniumGrid.Two -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
