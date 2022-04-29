@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium4.EmulateSlowNetwork">
+      <class name="framework.FrameWorkTest1">
         <methods>
-          <include name="slowNetwork"/>
+          <include name="test"/>
           <include name="setup"/>
-          <include name="close"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Selenium4.EmulateSlowNetwork -->
+      </class> <!-- framework.FrameWorkTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

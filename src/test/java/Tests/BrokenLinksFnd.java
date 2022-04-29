@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class FndBrokenLinks {
+public class BrokenLinksFnd {
 public static void main(String args[]) {
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver=new ChromeDriver();
@@ -31,7 +31,7 @@ public static void main(String args[]) {
 			HttpURLConnection huc = ((HttpURLConnection) new URL(url).openConnection());
 			huc.setRequestMethod("HEAD");
 			huc.connect();
-			if(huc.getResponseCode() > 400) {
+			if(huc.getResponseCode() >= 400) {
 				System.out.println("Invalid link: "+ url);
 			}
 			else

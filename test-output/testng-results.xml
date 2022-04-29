@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11280" started-at="2022-01-30T11:07:19 CST" finished-at="2022-01-30T11:07:30 CST">
+  <suite name="Default suite" duration-ms="4416" started-at="2022-04-24T08:22:49 CDT" finished-at="2022-04-24T08:22:53 CDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11280" started-at="2022-01-30T11:07:19 CST" finished-at="2022-01-30T11:07:30 CST">
-      <class name="SeleniumGridBrowserOptions.Three">
-        <test-method status="PASS" signature="setup()[pri:0, instance:SeleniumGridBrowserOptions.Three@5c18298f]" name="setup" is-config="true" duration-ms="3756" started-at="2022-01-30T11:07:19 CST" finished-at="2022-01-30T11:07:23 CST">
+    <test name="Default test" duration-ms="4416" started-at="2022-04-24T08:22:49 CDT" finished-at="2022-04-24T08:22:53 CDT">
+      <class name="framework.FrameWorkTestWithBaseClass">
+        <test-method status="PASS" signature="setup()[pri:0, instance:framework.FrameWorkTestWithBaseClass@1786f9d5]" name="setup" is-config="true" duration-ms="3853" started-at="2022-04-24T08:22:49 CDT" finished-at="2022-04-24T08:22:52 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testThree()[pri:0, instance:SeleniumGridBrowserOptions.Three@5c18298f]" name="testThree" duration-ms="4628" started-at="2022-01-30T11:07:23 CST" finished-at="2022-01-30T11:07:27 CST">
+        <test-method status="PASS" signature="test()[pri:0, instance:framework.FrameWorkTestWithBaseClass@1786f9d5]" name="test" duration-ms="348" started-at="2022-04-24T08:22:52 CDT" finished-at="2022-04-24T08:22:53 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumGridBrowserOptions.Three@5c18298f]" name="teardown" is-config="true" duration-ms="143" started-at="2022-01-30T11:07:27 CST" finished-at="2022-01-30T11:07:27 CST">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:framework.FrameWorkTestWithBaseClass@1786f9d5]" name="tearDown" is-config="true" duration-ms="195" started-at="2022-04-24T08:22:53 CDT" finished-at="2022-04-24T08:22:53 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SeleniumGridBrowserOptions.Three -->
-      <class name="SeleniumGridBrowserOptions.One">
-        <test-method status="PASS" signature="setup()[pri:0, instance:SeleniumGridBrowserOptions.One@a74868d]" name="setup" is-config="true" duration-ms="2723" started-at="2022-01-30T11:07:19 CST" finished-at="2022-01-30T11:07:22 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testOne()[pri:0, instance:SeleniumGridBrowserOptions.One@a74868d]" name="testOne" duration-ms="4914" started-at="2022-01-30T11:07:22 CST" finished-at="2022-01-30T11:07:26 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumGridBrowserOptions.One@a74868d]" name="teardown" is-config="true" duration-ms="185" started-at="2022-01-30T11:07:26 CST" finished-at="2022-01-30T11:07:27 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SeleniumGridBrowserOptions.One -->
-      <class name="SeleniumGridBrowserOptions.Two">
-        <test-method status="PASS" signature="setup()[pri:0, instance:SeleniumGridBrowserOptions.Two@27d415d9]" name="setup" is-config="true" duration-ms="5048" started-at="2022-01-30T11:07:19 CST" finished-at="2022-01-30T11:07:24 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testTwo()[pri:0, instance:SeleniumGridBrowserOptions.Two@27d415d9]" name="testTwo" duration-ms="5542" started-at="2022-01-30T11:07:24 CST" finished-at="2022-01-30T11:07:29 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTwo -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumGridBrowserOptions.Two@27d415d9]" name="teardown" is-config="true" duration-ms="663" started-at="2022-01-30T11:07:29 CST" finished-at="2022-01-30T11:07:30 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SeleniumGridBrowserOptions.Two -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- framework.FrameWorkTestWithBaseClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
