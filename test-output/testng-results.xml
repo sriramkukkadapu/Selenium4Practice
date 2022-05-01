@@ -2,24 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4416" started-at="2022-04-24T08:22:49 CDT" finished-at="2022-04-24T08:22:53 CDT">
+  <suite name="Default suite" duration-ms="4326" started-at="2022-05-01T09:17:34 CDT" finished-at="2022-05-01T09:17:38 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4416" started-at="2022-04-24T08:22:49 CDT" finished-at="2022-04-24T08:22:53 CDT">
-      <class name="framework.FrameWorkTestWithBaseClass">
-        <test-method status="PASS" signature="setup()[pri:0, instance:framework.FrameWorkTestWithBaseClass@1786f9d5]" name="setup" is-config="true" duration-ms="3853" started-at="2022-04-24T08:22:49 CDT" finished-at="2022-04-24T08:22:52 CDT">
+    <test name="Default test" duration-ms="4326" started-at="2022-05-01T09:17:34 CDT" finished-at="2022-05-01T09:17:38 CDT">
+      <class name="Tests.AzureTest1">
+        <test-method status="PASS" signature="test1()[pri:0, instance:Tests.AzureTest1@553a3d88]" name="test1" duration-ms="4298" started-at="2022-05-01T09:17:34 CDT" finished-at="2022-05-01T09:17:38 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test()[pri:0, instance:framework.FrameWorkTestWithBaseClass@1786f9d5]" name="test" duration-ms="348" started-at="2022-04-24T08:22:52 CDT" finished-at="2022-04-24T08:22:53 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:framework.FrameWorkTestWithBaseClass@1786f9d5]" name="tearDown" is-config="true" duration-ms="195" started-at="2022-04-24T08:22:53 CDT" finished-at="2022-04-24T08:22:53 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- framework.FrameWorkTestWithBaseClass -->
+        </test-method> <!-- test1 -->
+      </class> <!-- Tests.AzureTest1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
