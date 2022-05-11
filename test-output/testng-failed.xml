@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework.FrameWorkTest1">
+      <class name="ExtentReports.TestExtentReportsAttachScreenshot">
         <methods>
-          <include name="test"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="beforeSetup"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- framework.FrameWorkTest1 -->
+      </class> <!-- ExtentReports.TestExtentReportsAttachScreenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4326" started-at="2022-05-01T09:17:34 CDT" finished-at="2022-05-01T09:17:38 CDT">
+  <suite name="Default suite" duration-ms="9666" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:33:03 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4326" started-at="2022-05-01T09:17:34 CDT" finished-at="2022-05-01T09:17:38 CDT">
-      <class name="Tests.AzureTest1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:Tests.AzureTest1@553a3d88]" name="test1" duration-ms="4298" started-at="2022-05-01T09:17:34 CDT" finished-at="2022-05-01T09:17:38 CDT">
+    <test name="Default test" duration-ms="9666" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:33:03 CDT">
+      <class name="ExtentReports.TestExtentReportsAttachScreenshot">
+        <test-method status="PASS" signature="beforeSetup()[pri:0, instance:ExtentReports.TestExtentReportsAttachScreenshot@4c762604]" name="beforeSetup" is-config="true" duration-ms="225" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:32:53 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- Tests.AzureTest1 -->
+        </test-method> <!-- beforeSetup -->
+        <test-method status="PASS" signature="f()[pri:0, instance:ExtentReports.TestExtentReportsAttachScreenshot@4c762604]" name="f" duration-ms="9647" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:33:03 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ExtentReports.TestExtentReportsAttachScreenshot@4c762604]" name="afterSuite" is-config="true" duration-ms="664" started-at="2022-05-03T10:33:03 CDT" finished-at="2022-05-03T10:33:03 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- ExtentReports.TestExtentReportsAttachScreenshot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
