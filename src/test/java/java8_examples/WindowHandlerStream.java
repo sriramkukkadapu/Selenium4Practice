@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WindowHandlerStream {
-public static void main(String args[])
+public static void main(String args[]) throws Exception
 {
 	WebDriverManager.chromedriver().setup();
 	ChromeDriver driver=new ChromeDriver();
@@ -26,18 +26,18 @@ public static void main(String args[])
 	
 	//Now call function to switch to popup window with some title
 	
-	switchToWindowTest(driver, "PopupTest Sunday");
+//	switchToWindowTest(driver, "PopupTest Sunday");
 	
 	//driver.quit();
 	
 }
 
-public static String switchToWindowTest(WebDriver driver, String title) {
-	return driver.getWindowHandles()
-	.stream()
-		.map(handler -> driver.switchTo().window(handler).getTitle()) //get all titles in a map
-			.filter(ele -> ele.contains(title)) //apply filter on a map
-				.findFirst() //find first with above filter condition
-					.orElseThrow(() -> {throw new RuntimeException("No such handler"); }); //if not found throw exception
-	}
+//public static String switchToWindowTest(WebDriver driver, String title) throws Exception {
+//	return driver.getWindowHandles()
+//	.stream()
+//		.map(handler -> driver.switchTo().window(handler).getTitle()) //get all titles in a map
+//			.filter(ele -> ele.contains(title)) //apply filter on a map
+//				.findFirst() //find first with above filter condition
+//					.orElseThrow(() -> {throw new RuntimeException("No such handler"); }); //if not found throw exception
+//	}
 }

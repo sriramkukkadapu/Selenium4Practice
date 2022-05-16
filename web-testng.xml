@@ -3,10 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test" parallel="true">
     <classes>
-      <class name="Tests.One"/>    
-      <class name="SeleniumGrid.Two"/>
-      <class name="SeleniumGrid.Three"/>
-      <!-- <class name="SeleniumGrid.Four"/> -->
+      <class name="Tests.WebTest"/>    
 
 
     </classes>
