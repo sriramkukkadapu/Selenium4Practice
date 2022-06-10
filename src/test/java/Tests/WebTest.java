@@ -21,6 +21,7 @@ public class WebTest {
         capabilities.setCapability("enableVideo", false);
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
         driver.get("https://google.co.in");
-        Assert.assertEquals(driver.getTitle(), "Google");
+        System.out.println("=========> Asserting the title of the page");
+        Assert.assertEquals(driver.getTitle(), "Google1");
     }
 }
