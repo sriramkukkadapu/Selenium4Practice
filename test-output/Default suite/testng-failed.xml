@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExtentReports.TestExtentReportsAttachScreenshot">
+      <class name="aws.SampleTest">
         <methods>
-          <include name="afterSuite"/>
-          <include name="beforeSetup"/>
-          <include name="f"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- ExtentReports.TestExtentReportsAttachScreenshot -->
+      </class> <!-- aws.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9666" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:33:03 CDT">
+  <suite name="Suite" duration-ms="11227" started-at="2022-07-28T15:48:33 IST" finished-at="2022-07-28T15:48:44 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9666" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:33:03 CDT">
-      <class name="ExtentReports.TestExtentReportsAttachScreenshot">
-        <test-method status="PASS" signature="beforeSetup()[pri:0, instance:ExtentReports.TestExtentReportsAttachScreenshot@4c762604]" name="beforeSetup" is-config="true" duration-ms="225" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:32:53 CDT">
+    <test name="Test1" duration-ms="5032" started-at="2022-07-28T15:48:33 IST" finished-at="2022-07-28T15:48:38 IST">
+      <class name="aws.SampleTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:aws.SampleTest@78ac1102]" name="setup" duration-ms="5000" started-at="2022-07-28T15:48:33 IST" finished-at="2022-07-28T15:48:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSetup -->
-        <test-method status="PASS" signature="f()[pri:0, instance:ExtentReports.TestExtentReportsAttachScreenshot@4c762604]" name="f" duration-ms="9647" started-at="2022-05-03T10:32:53 CDT" finished-at="2022-05-03T10:33:03 CDT">
+        </test-method> <!-- setup -->
+      </class> <!-- aws.SampleTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="6185" started-at="2022-07-28T15:48:38 IST" finished-at="2022-07-28T15:48:44 IST">
+      <class name="aws.SampleTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:aws.SampleTest@6d3af739]" name="setup" duration-ms="6181" started-at="2022-07-28T15:48:38 IST" finished-at="2022-07-28T15:48:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ExtentReports.TestExtentReportsAttachScreenshot@4c762604]" name="afterSuite" is-config="true" duration-ms="664" started-at="2022-05-03T10:33:03 CDT" finished-at="2022-05-03T10:33:03 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- ExtentReports.TestExtentReportsAttachScreenshot -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+      </class> <!-- aws.SampleTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
