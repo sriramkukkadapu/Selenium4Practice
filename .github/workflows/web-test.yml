@@ -25,5 +25,5 @@ jobs:
 
       - name: Run the tests
         run: 
-            #mvn clean test -Pweb  
-            mvn clean test -Dsurefire.suiteXmlFiles=web-testng.xml
+            mvn clean test -Pweb  
+            #mvn clean test -Dsurefire.suiteXmlFiles=web-testng.xml
