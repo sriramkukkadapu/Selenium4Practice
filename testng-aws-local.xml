@@ -5,15 +5,15 @@
   <test thread-count="5" name="Test1" parallel="true">
 	  <parameter name="browser" value="chrome"/>
 	    <classes>
-	      <class name="aws.SampleTest"/>    
+	      <class name="aws.SampleTestLocal"/>    
 	    </classes>
   </test> <!-- Test -->
   
-  <!-- <test thread-count="5" name="Test2" parallel="true">
+  <test thread-count="5" name="Test2" parallel="true">
     	<parameter name="browser" value="firefox"/>
 	    <classes>
-	      <class name="aws.SampleTest"/>    
+	      <class name="aws.SampleTestLocal"/>    
 	    </classes>
-  </test> Test -->
+  </test> <!-- Test -->
   
 </suite> <!-- Suite -->
