@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28868" started-at="2022-07-30T12:00:04 IST" finished-at="2022-07-30T12:00:33 IST">
+  <suite name="Default suite" duration-ms="16472" started-at="2022-08-01T09:23:02 IST" finished-at="2022-08-01T09:23:18 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28868" started-at="2022-07-30T12:00:04 IST" finished-at="2022-07-30T12:00:33 IST">
-      <class name="SeleniumStandalone.SampleTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:SeleniumStandalone.SampleTest@22eeefeb]" name="setup" duration-ms="28825" started-at="2022-07-30T12:00:04 IST" finished-at="2022-07-30T12:00:33 IST">
+    <test name="Default test" duration-ms="16472" started-at="2022-08-01T09:23:02 IST" finished-at="2022-08-01T09:23:18 IST">
+      <class name="SeleniumDocker.AmuthanExample">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SeleniumDocker.AmuthanExample@22eeefeb]" name="setup" duration-ms="16443" started-at="2022-08-01T09:23:02 IST" finished-at="2022-08-01T09:23:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-      </class> <!-- SeleniumStandalone.SampleTest -->
+      </class> <!-- SeleniumDocker.AmuthanExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
