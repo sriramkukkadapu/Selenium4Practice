@@ -22,6 +22,7 @@ public class WebTest {
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
         driver.get("https://google.co.in");
         System.out.println("=========> Asserting the title of the page");
+        System.out.println("Title of the page is: "+driver.getTitle());
         Assert.assertEquals(driver.getTitle(), "Google");
     }
 }
