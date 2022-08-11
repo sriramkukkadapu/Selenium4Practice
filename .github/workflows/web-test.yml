@@ -4,9 +4,9 @@ on:
 
   schedule:
     - cron:  '1 * * * *'
-    
+
   push:
-    branches: [ main ]
+    branches: [ master ]
     
   workflow_dispatch:
 
