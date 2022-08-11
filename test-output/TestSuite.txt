@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.279 s <<< FAILURE! - in TestSuite
+Tests.WebTest.testGoogleSearchUsingSelenoid  Time elapsed: 10.932 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'srirams-MBP', ip: 'fe80:0:0:0:82c:9258:a1c2:8b9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}], desiredCapabilities=Capabilities {browserName: chrome, enableVNC: false, enableVideo: false}}]
+Capabilities {}
+	at Tests.WebTest.testGoogleSearchUsingSelenoid(WebTest.java:22)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:4444
+	at Tests.WebTest.testGoogleSearchUsingSelenoid(WebTest.java:22)
+Caused by: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:4444
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:4444
+Caused by: java.net.ConnectException: Connection refused
+
