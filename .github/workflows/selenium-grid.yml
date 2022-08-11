@@ -4,6 +4,9 @@
 name: Selenium Grid Example - Faisal Khatri
 
 on:
+
+  push:
+    branches: [ master ]
   pull_request:
     branches:
       - master
