@@ -27,3 +27,18 @@ jobs:
         run: 
             mvn clean test -Pweb  
             #mvn clean test -Dsurefire.suiteXmlFiles=web-testng.xml
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v2
+        with: 
+          name: ${{ github.run_number }}-testng-report-upload
+          path: ./test-output/
+          if-no-files-found: ignore        
+
+
+      - name: Deploy pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: test-output
+
