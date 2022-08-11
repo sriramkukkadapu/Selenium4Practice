@@ -1,6 +1,10 @@
 name: Run web tests in Github runner
 
 on:
+
+  schedule:
+    - cron:  '1 * * * *'
+    
   push:
     branches: [ main ]
     
