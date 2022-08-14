@@ -3,7 +3,8 @@ name: Run web tests in Github runner
 on:
 
   schedule:
-    - cron:  '1 * * * *'
+    # - cron:  '1 * * * *'
+    - cron:: '0 8 * * *'  #everday at 8 am    
 
   push:
     branches: [ master ]
