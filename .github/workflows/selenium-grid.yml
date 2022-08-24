@@ -5,6 +5,10 @@ name: Selenium Grid Example - Faisal Khatri
 
 on:
 
+  schedule:
+    # - cron:  '1 * * * *'
+    - cron: '0 8 * * *'  #everday at 8 am    
+    
   push:
     branches: [ master ]
   pull_request:
