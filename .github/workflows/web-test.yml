@@ -40,7 +40,7 @@ jobs:
           name: ${{ github.run_number }}-testng-report-upload
           path: ./test-output/
           if-no-files-found: ignore        
-
+          retention-days: 2
 
       - name: Deploy pages
         uses: peaceiris/actions-gh-pages@v3
