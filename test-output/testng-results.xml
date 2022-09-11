@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="930" started-at="2022-09-07T11:46:14 IST" finished-at="2022-09-07T11:46:15 IST">
+  <suite name="Default suite" duration-ms="9277" started-at="2022-09-11T19:21:11 IST" finished-at="2022-09-11T19:21:20 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="930" started-at="2022-09-07T11:46:14 IST" finished-at="2022-09-07T11:46:15 IST">
-      <class name="PDFExamples.NewTest">
-        <test-method status="PASS" signature="f()[pri:0, instance:PDFExamples.NewTest@17d0685f]" name="f" duration-ms="901" started-at="2022-09-07T11:46:14 IST" finished-at="2022-09-07T11:46:15 IST">
+    <test name="Default test" duration-ms="9277" started-at="2022-09-11T19:21:11 IST" finished-at="2022-09-11T19:21:20 IST">
+      <class name="FrameworkWithoutPageFactory.Testcase1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="setup" is-config="true" duration-ms="2321" started-at="2022-09-11T19:21:11 IST" finished-at="2022-09-11T19:21:13 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- PDFExamples.NewTest -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testNegative()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="testNegative" duration-ms="5841" started-at="2022-09-11T19:21:13 IST" finished-at="2022-09-11T19:21:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegative -->
+        <test-method status="PASS" signature="testPositive()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="testPositive" duration-ms="970" started-at="2022-09-11T19:21:19 IST" finished-at="2022-09-11T19:21:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositive -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="tearDown" is-config="true" duration-ms="118" started-at="2022-09-11T19:21:20 IST" finished-at="2022-09-11T19:21:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrameworkWithoutPageFactory.Testcase1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

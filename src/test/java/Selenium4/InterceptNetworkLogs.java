@@ -7,8 +7,9 @@ import java.util.Optional;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v94.log.Log;
-import org.openqa.selenium.devtools.v94.network.Network;
+import org.openqa.selenium.devtools.v104.network.Network;
+//import org.openqa.selenium.devtools.v94.log.Log;
+//import org.openqa.selenium.devtools.v94.network.Network;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -32,5 +33,6 @@ public static void main(String args[]) throws InterruptedException
 	driver.get("http://the-internet.herokuapp.com/broken_images");
 	
 	driver.quit();
+	
 }
 }

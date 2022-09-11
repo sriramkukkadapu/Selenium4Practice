@@ -4,8 +4,10 @@ import java.util.Optional;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v96.network.Network;
-import org.openqa.selenium.devtools.v96.network.model.ConnectionType;
+//import org.openqa.selenium.devtools.v96.network.Network;
+//import org.openqa.selenium.devtools.v96.network.model.ConnectionType;
+import org.openqa.selenium.devtools.v104.network.Network;
+import org.openqa.selenium.devtools.v104.network.model.ConnectionType;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -18,6 +20,7 @@ public class EmulateOfflineNetwork {
 
 	
 	public static void main(String ar[]){
+		
 		ChromeDriver driver;
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
@@ -34,5 +37,6 @@ public class EmulateOfflineNetwork {
 		driver.get("https://www.amazon.in");
 		
 		driver.close();
+		
 	}
 }

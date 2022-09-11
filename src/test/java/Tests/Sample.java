@@ -1,5 +1,6 @@
 package Tests;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -23,7 +24,7 @@ public class Sample {
 		WebDriver driver=driverClassObj.openBrowser();
 		driver.get("https://www.google.com");
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		WebDriverWait wait=new WebDriverWait(driver,30);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
 		Actions actions=new Actions(driver);
 		
 		driver.get("https://www.facebook.com");

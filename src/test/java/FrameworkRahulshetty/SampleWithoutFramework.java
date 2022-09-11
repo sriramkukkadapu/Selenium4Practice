@@ -14,7 +14,7 @@ import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Sample {
+public class SampleWithoutFramework {
 	
 	public static void main(String args[] ) throws InterruptedException{
 		

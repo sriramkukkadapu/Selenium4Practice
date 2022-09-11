@@ -12,13 +12,15 @@ import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v94.emulation.Emulation;
+//import org.openqa.selenium.devtools.v94.emulation.Emulation;
+import org.openqa.selenium.devtools.v103.emulation.Emulation;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GeoLocation_Example2 {
 
 	public static void main(String args[]) throws FileNotFoundException, IOException, InterruptedException {
+		
 		
 		WebDriverManager.chromedriver().setup();
 		
@@ -34,6 +36,7 @@ public class GeoLocation_Example2 {
 		driver.get("https://my-location.org/");
 		Thread.sleep(2000);
 		driver.close();
+		
 		
 	}
 }

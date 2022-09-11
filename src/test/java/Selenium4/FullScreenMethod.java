@@ -3,7 +3,7 @@ package Selenium4;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v94.log.Log;
+//import org.openqa.selenium.devtools.v94.log.Log;
 
 public class FullScreenMethod {
 public static void main(String args[]) throws InterruptedException

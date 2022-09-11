@@ -1,5 +1,6 @@
 package GenericLib;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -21,13 +22,13 @@ public class Utils {
 	
 	public void waitForElementPresent(WebDriver driver,WebElement ele)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,30);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(ele));
 	}
 	
 	public void waitForElementClickable(WebDriver driver,WebElement ele)
 	{
-		WebDriverWait wait=new WebDriverWait(driver,30);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
 	}
 	

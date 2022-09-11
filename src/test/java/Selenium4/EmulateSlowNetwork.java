@@ -4,8 +4,10 @@ import java.util.Optional;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v96.network.Network;
-import org.openqa.selenium.devtools.v96.network.model.ConnectionType;
+import org.openqa.selenium.devtools.v104.network.Network;
+import org.openqa.selenium.devtools.v104.network.model.ConnectionType;
+//import org.openqa.selenium.devtools.v96.network.Network;
+//import org.openqa.selenium.devtools.v96.network.model.ConnectionType;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -31,6 +33,7 @@ public class EmulateSlowNetwork {
 	@Test(priority=2)
 	public void slowNetwork() {
 
+		
 		DevTools devTools = driver.getDevTools();
 		devTools.createSession();
 		devTools.send(Network.emulateNetworkConditions(
@@ -38,6 +41,8 @@ public class EmulateSlowNetwork {
 				Optional.of(ConnectionType.CELLULAR2G)));
 		
 		driver.get("https://www.amazon.in");
+		
+		
 	}
 	
 	@AfterMethod

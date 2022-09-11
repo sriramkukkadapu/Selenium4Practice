@@ -1,5 +1,6 @@
 package Tests;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -21,7 +22,7 @@ public class Facebook_Seemore {
 		
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		try {
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		driverClassObj.closeBrowser(driver);
 		
 		driver.get("https://www.facebook.com");

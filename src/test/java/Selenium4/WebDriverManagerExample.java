@@ -35,8 +35,8 @@ public class WebDriverManagerExample {
 	  System.out.println(driver.getTitle());
 	  Capabilities caps=((RemoteWebDriver) driver).getCapabilities();
 	  System.out.println(caps.getBrowserName());
-	  System.out.println(caps.getVersion());
-	  System.out.println(caps.getPlatform());
+	  System.out.println(caps.getBrowserVersion());
+	  System.out.println(caps.getPlatformName());
   }
   
   @AfterMethod
