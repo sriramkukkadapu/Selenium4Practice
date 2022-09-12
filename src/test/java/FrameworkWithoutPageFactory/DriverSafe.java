@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -51,6 +52,12 @@ public class DriverSafe {
 			rawdriver = new FirefoxDriver();
 		}
 		
+		else if(browser.equalsIgnoreCase("safari")){
+
+			WebDriverManager.safaridriver().setup();
+
+			rawdriver = new SafariDriver();
+		}
 		
 
 		System.out.println("Before Test Thread ID: " + Thread.currentThread().getId());

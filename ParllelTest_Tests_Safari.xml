@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite" parallel="tests">
+
+  <test thread-count="5" verbose="2" name="Suite Safari" parallel="classes">    
+    <parameter name="browser" value="safari"/>
+    <classes>
+    	<class name="FrameworkWithoutPageFactory.Testcase1"/> 
+        <class name="FrameworkWithoutPageFactory.Testcase2"/>
+        <class name="FrameworkWithoutPageFactory.Testcase2continued"/>        
+    </classes>
+  </test> <!-- Default test -->  
+  
+</suite> <!-- Default suite -->
+            
