@@ -11,7 +11,7 @@ public class DriverSafe {
 	
 	WebDriver driver;
 	WebDriver rawdriver;
-	ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
+	static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
 	
 	public WebDriver getDriver(String executeLocation) {{
 		

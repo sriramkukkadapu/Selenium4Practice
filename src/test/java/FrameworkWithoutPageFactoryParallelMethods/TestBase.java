@@ -16,7 +16,7 @@ public class TestBase {
 	PageLogin loginPage;
 	PageHome homePage;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		
 		driverClassObj = new DriverSafe();
@@ -26,7 +26,7 @@ public class TestBase {
 	}
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driverClassObj.closeDriver();
 	}

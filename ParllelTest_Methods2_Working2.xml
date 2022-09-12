@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite" parallel = "tests">
+  
+  <test thread-count="5" verbose="2" name="Chrome test" parallel="methods">
+  	<parameter name="browser" value="chrome"/>
+    <classes >
+	    <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods"/> 
+	    <!-- <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase2"/> -->
+    </classes>
+  </test> <!-- Default test -->
+  
+  <test thread-count="5" verbose="2" name="Firefox test" parallel="methods">
+  	<parameter name="browser" value="firefox"/>
+    <classes  >
+	    <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods" /> 
+	    <!-- <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase2"/> -->
+    </classes>
+  </test> <!-- Default test -->  
+</suite> <!-- Default suite -->
+            

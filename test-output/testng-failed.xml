@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="tests">
-  <test thread-count="5" name="Suite Safari(failed)" parallel="classes">
-    <parameter name="browser" value="safari"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)" parallel="methods">
     <classes>
-      <class name="FrameworkWithoutPageFactory.Testcase1">
+      <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase1">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="testEcommercePositive"/>
         </methods>
-      </class> <!-- FrameworkWithoutPageFactory.Testcase1 -->
-      <class name="FrameworkWithoutPageFactory.Testcase2continued">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testLinkedin"/>
-          <include name="testFacebook"/>
-        </methods>
-      </class> <!-- FrameworkWithoutPageFactory.Testcase2continued -->
+      </class> <!-- FrameworkWithoutPageFactoryParallelMethods.Testcase1 -->
     </classes>
-  </test> <!-- Suite Safari(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
