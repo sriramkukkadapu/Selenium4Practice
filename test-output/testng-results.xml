@@ -1,29 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9277" started-at="2022-09-11T19:21:11 IST" finished-at="2022-09-11T19:21:20 IST">
+  <suite name="Default suite" duration-ms="15807" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:31:07 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9277" started-at="2022-09-11T19:21:11 IST" finished-at="2022-09-11T19:21:20 IST">
-      <class name="FrameworkWithoutPageFactory.Testcase1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="setup" is-config="true" duration-ms="2321" started-at="2022-09-11T19:21:11 IST" finished-at="2022-09-11T19:21:13 IST">
+    <test name="Suite Chrome" duration-ms="11755" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:31:03 IST">
+      <class name="FrameworkWithoutPageFactory.Testcase2continued">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@5d11346a]" name="setup" is-config="true" duration-ms="3358" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:30:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testNegative()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="testNegative" duration-ms="5841" started-at="2022-09-11T19:21:13 IST" finished-at="2022-09-11T19:21:19 IST">
+        <test-method status="PASS" signature="testFacebook()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@5d11346a]" name="testFacebook" duration-ms="2778" started-at="2022-09-12T11:30:54 IST" finished-at="2022-09-12T11:30:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testNegative -->
-        <test-method status="PASS" signature="testPositive()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="testPositive" duration-ms="970" started-at="2022-09-11T19:21:19 IST" finished-at="2022-09-11T19:21:20 IST">
+        </test-method> <!-- testFacebook -->
+        <test-method status="PASS" signature="testLinkedin()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@5d11346a]" name="testLinkedin" duration-ms="1292" started-at="2022-09-12T11:30:57 IST" finished-at="2022-09-12T11:30:58 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPositive -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@704921a5]" name="tearDown" is-config="true" duration-ms="118" started-at="2022-09-11T19:21:20 IST" finished-at="2022-09-11T19:21:20 IST">
+        </test-method> <!-- testLinkedin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@5d11346a]" name="tearDown" is-config="true" duration-ms="130" started-at="2022-09-12T11:30:58 IST" finished-at="2022-09-12T11:30:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrameworkWithoutPageFactory.Testcase2continued -->
+      <class name="FrameworkWithoutPageFactory.Testcase1">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@27d415d9]" name="setup" is-config="true" duration-ms="3358" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:30:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testEcommerceNegative()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@27d415d9]" name="testEcommerceNegative" duration-ms="6582" started-at="2022-09-12T11:30:54 IST" finished-at="2022-09-12T11:31:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEcommerceNegative -->
+        <test-method status="PASS" signature="testEcommercePositive()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@27d415d9]" name="testEcommercePositive" duration-ms="1079" started-at="2022-09-12T11:31:01 IST" finished-at="2022-09-12T11:31:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEcommercePositive -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@27d415d9]" name="tearDown" is-config="true" duration-ms="257" started-at="2022-09-12T11:31:02 IST" finished-at="2022-09-12T11:31:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- FrameworkWithoutPageFactory.Testcase1 -->
-    </test> <!-- Default test -->
+      <class name="FrameworkWithoutPageFactory.Testcase2">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@2fd66ad3]" name="setup" is-config="true" duration-ms="3493" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:30:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testAmazon()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@2fd66ad3]" name="testAmazon" duration-ms="4181" started-at="2022-09-12T11:30:54 IST" finished-at="2022-09-12T11:30:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazon -->
+        <test-method status="PASS" signature="testGoogle()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@2fd66ad3]" name="testGoogle" duration-ms="3744" started-at="2022-09-12T11:30:59 IST" finished-at="2022-09-12T11:31:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@2fd66ad3]" name="tearDown" is-config="true" duration-ms="319" started-at="2022-09-12T11:31:02 IST" finished-at="2022-09-12T11:31:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrameworkWithoutPageFactory.Testcase2 -->
+    </test> <!-- Suite Chrome -->
+    <test name="Suite Firefox" duration-ms="15807" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:31:07 IST">
+      <class name="FrameworkWithoutPageFactory.Testcase2continued">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@3d0f8e03]" name="setup" is-config="true" duration-ms="6251" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:30:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testFacebook()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@3d0f8e03]" name="testFacebook" duration-ms="2727" started-at="2022-09-12T11:30:57 IST" finished-at="2022-09-12T11:31:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFacebook -->
+        <test-method status="PASS" signature="testLinkedin()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@3d0f8e03]" name="testLinkedin" duration-ms="2892" started-at="2022-09-12T11:31:00 IST" finished-at="2022-09-12T11:31:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinkedin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2continued@3d0f8e03]" name="tearDown" is-config="true" duration-ms="1033" started-at="2022-09-12T11:31:03 IST" finished-at="2022-09-12T11:31:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrameworkWithoutPageFactory.Testcase2continued -->
+      <class name="FrameworkWithoutPageFactory.Testcase1">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@543e710e]" name="setup" is-config="true" duration-ms="6332" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:30:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testEcommerceNegative()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@543e710e]" name="testEcommerceNegative" duration-ms="6861" started-at="2022-09-12T11:30:57 IST" finished-at="2022-09-12T11:31:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEcommerceNegative -->
+        <test-method status="PASS" signature="testEcommercePositive()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@543e710e]" name="testEcommercePositive" duration-ms="707" started-at="2022-09-12T11:31:04 IST" finished-at="2022-09-12T11:31:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEcommercePositive -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase1@543e710e]" name="tearDown" is-config="true" duration-ms="755" started-at="2022-09-12T11:31:05 IST" finished-at="2022-09-12T11:31:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrameworkWithoutPageFactory.Testcase1 -->
+      <class name="FrameworkWithoutPageFactory.Testcase2">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@57f23557]" name="setup" is-config="true" duration-ms="6172" started-at="2022-09-12T11:30:51 IST" finished-at="2022-09-12T11:30:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testAmazon()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@57f23557]" name="testAmazon" duration-ms="3614" started-at="2022-09-12T11:30:57 IST" finished-at="2022-09-12T11:31:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazon -->
+        <test-method status="PASS" signature="testGoogle()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@57f23557]" name="testGoogle" duration-ms="5074" started-at="2022-09-12T11:31:01 IST" finished-at="2022-09-12T11:31:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrameworkWithoutPageFactory.Testcase2@57f23557]" name="tearDown" is-config="true" duration-ms="929" started-at="2022-09-12T11:31:06 IST" finished-at="2022-09-12T11:31:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrameworkWithoutPageFactory.Testcase2 -->
+    </test> <!-- Suite Firefox -->
   </suite> <!-- Default suite -->
 </testng-results>

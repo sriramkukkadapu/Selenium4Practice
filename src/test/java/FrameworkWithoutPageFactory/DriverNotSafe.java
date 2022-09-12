@@ -4,11 +4,10 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Driver {
+public class DriverNotSafe {
 	
 	WebDriver driver;
 	
@@ -16,7 +15,7 @@ public class Driver {
 		
 		WebDriverManager.chromedriver().setup();
 		
-		driver = new ChromeDriver(); 
+		driver = new ChromeDriver(); 				
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		
@@ -28,9 +27,10 @@ public class Driver {
 	}
 	
 	
-	public void closeDriver() {
 	
-		driver.quit();
+	public void closeDriver() {
+			
+		driver.quit();		
 	
 	}
 	

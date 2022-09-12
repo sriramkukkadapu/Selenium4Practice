@@ -1,4 +1,4 @@
-package FrameworkWithoutPageFactory;
+package FrameworkWithoutPageFactoryParallelMethods;
 
 import java.time.Duration;
 

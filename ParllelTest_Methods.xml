@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite" parallel="methods">
+  <test thread-count="5" verbose="2" name="Default test">
+    <classes>
+	    <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase1"/> 
+	    <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase2"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
+            
