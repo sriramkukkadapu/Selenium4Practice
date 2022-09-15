@@ -19,7 +19,7 @@ public class TestBaseDriverSafe {
   
   
   @Parameters ({"browser"})
-  @BeforeMethod(alwaysRun = true)
+  @BeforeMethod(alwaysRun = true)  
   public void startDriver(Method method,String browser) {
 	if(browser.equalsIgnoreCase("chrome")) {  
 		WebDriverManager.chromedriver().setup();

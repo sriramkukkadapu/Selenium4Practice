@@ -6,6 +6,7 @@
   	<parameter name="browser" value="chrome"/>
     <classes >
 	    <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods"/> 
+	    <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2"/>
 	    <!-- <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase2"/> -->
     </classes>
   </test> <!-- Default test -->

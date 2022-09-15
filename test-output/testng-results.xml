@@ -2,28 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13189" started-at="2022-09-12T22:55:33 IST" finished-at="2022-09-12T22:55:46 IST">
+  <suite name="Default suite" duration-ms="11255" started-at="2022-09-13T09:01:04 IST" finished-at="2022-09-13T09:01:15 IST">
     <groups>
     </groups>
-    <test name="Chrome test" duration-ms="9663" started-at="2022-09-12T22:55:33 IST" finished-at="2022-09-12T22:55:43 IST">
+    <test name="Chrome test" duration-ms="11255" started-at="2022-09-13T09:01:04 IST" finished-at="2022-09-13T09:01:15 IST">
       <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods">
-        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@2e3fc542]" name="startDriver" is-config="true" duration-ms="3461" started-at="2022-09-12T22:55:33 IST" finished-at="2022-09-12T22:55:36 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods.test() throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@2e3fc542]" name="startDriver" is-config="true" duration-ms="3461" started-at="2022-09-12T22:55:33 IST" finished-at="2022-09-12T22:55:36 IST">
+        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@150c158]" name="startDriver" is-config="true" duration-ms="4039" started-at="2022-09-13T09:01:04 IST" finished-at="2022-09-13T09:01:08 IST">
           <params>
             <param index="0">
               <value>
@@ -39,75 +23,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="test()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@2e3fc542]" name="test" duration-ms="5859" started-at="2022-09-12T22:55:36 IST" finished-at="2022-09-12T22:55:42 IST">
+        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@150c158]" name="startDriver" is-config="true" duration-ms="4039" started-at="2022-09-13T09:01:04 IST" finished-at="2022-09-13T09:01:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods.test2() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@2e3fc542]" name="test1" duration-ms="6016" started-at="2022-09-12T22:55:36 IST" finished-at="2022-09-12T22:55:42 IST">
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@150c158]" name="test2" duration-ms="7006" started-at="2022-09-13T09:01:08 IST" finished-at="2022-09-13T09:01:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@150c158]" name="test1" duration-ms="6963" started-at="2022-09-13T09:01:08 IST" finished-at="2022-09-13T09:01:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@2e3fc542]" name="stopDriver" is-config="true" duration-ms="314" started-at="2022-09-12T22:55:42 IST" finished-at="2022-09-12T22:55:43 IST">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@150c158]" name="stopDriver" is-config="true" duration-ms="215" started-at="2022-09-13T09:01:15 IST" finished-at="2022-09-13T09:01:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@2e3fc542]" name="stopDriver" is-config="true" duration-ms="156" started-at="2022-09-12T22:55:42 IST" finished-at="2022-09-12T22:55:43 IST">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@150c158]" name="stopDriver" is-config="true" duration-ms="135" started-at="2022-09-13T09:01:15 IST" finished-at="2022-09-13T09:01:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
       </class> <!-- FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods -->
+      <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2">
+        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2@376b4233]" name="startDriver" is-config="true" duration-ms="4039" started-at="2022-09-13T09:01:04 IST" finished-at="2022-09-13T09:01:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2.test3() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2@376b4233]" name="startDriver" is-config="true" duration-ms="4039" started-at="2022-09-13T09:01:04 IST" finished-at="2022-09-13T09:01:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2.test4() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2@376b4233]" name="test4" duration-ms="7007" started-at="2022-09-13T09:01:08 IST" finished-at="2022-09-13T09:01:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2@376b4233]" name="test3" duration-ms="6977" started-at="2022-09-13T09:01:08 IST" finished-at="2022-09-13T09:01:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2@376b4233]" name="stopDriver" is-config="true" duration-ms="182" started-at="2022-09-13T09:01:15 IST" finished-at="2022-09-13T09:01:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2@376b4233]" name="stopDriver" is-config="true" duration-ms="173" started-at="2022-09-13T09:01:15 IST" finished-at="2022-09-13T09:01:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods2 -->
     </test> <!-- Chrome test -->
-    <test name="Firefox test" duration-ms="13189" started-at="2022-09-12T22:55:33 IST" finished-at="2022-09-12T22:55:46 IST">
-      <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods">
-        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@44f75083]" name="startDriver" is-config="true" duration-ms="5361" started-at="2022-09-12T22:55:33 IST" finished-at="2022-09-12T22:55:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods.test1() throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="startDriver(java.lang.reflect.Method,java.lang.String)[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@44f75083]" name="startDriver" is-config="true" duration-ms="5479" started-at="2022-09-12T22:55:33 IST" finished-at="2022-09-12T22:55:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods.test() throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@44f75083]" name="test1" duration-ms="7032" started-at="2022-09-12T22:55:38 IST" finished-at="2022-09-12T22:55:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@44f75083]" name="test" duration-ms="6965" started-at="2022-09-12T22:55:38 IST" finished-at="2022-09-12T22:55:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@44f75083]" name="stopDriver" is-config="true" duration-ms="664" started-at="2022-09-12T22:55:45 IST" finished-at="2022-09-12T22:55:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods@44f75083]" name="stopDriver" is-config="true" duration-ms="718" started-at="2022-09-12T22:55:45 IST" finished-at="2022-09-12T22:55:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods -->
-    </test> <!-- Firefox test -->
   </suite> <!-- Default suite -->
 </testng-results>
