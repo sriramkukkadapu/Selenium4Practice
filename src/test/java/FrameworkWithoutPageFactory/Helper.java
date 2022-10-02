@@ -3,8 +3,10 @@ package FrameworkWithoutPageFactory;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -35,13 +37,20 @@ public class Helper {
 		wait.until(ExpectedConditions.presenceOfElementLocated(by));
 	}
 	
+	public void waitForElementToBeClickable(By by) {
+		wait.until(ExpectedConditions.elementToBeClickable(by));
+	}
+	
 	public void setValue(By by, String text) {
 		waitForElementDisplayed(by);
+		waitForElementToBeClickable(by);
+		driver.findElement(by).clear();
 		driver.findElement(by).sendKeys(text);
 	}
 	
 	public void click(By by) {
 		waitForElementDisplayed(by);
+		waitForElementToBeClickable(by);
 		driver.findElement(by).click();
 	}
 	
@@ -57,6 +66,12 @@ public class Helper {
 		}
 		
 		return result;
+	}
+	
+	public void hitEnter(By by) {
+		waitForElementDisplayed(by);
+		waitForElementToBeClickable(by);
+		driver.findElement(by).sendKeys(Keys.RETURN);
 	}
 	
 	
