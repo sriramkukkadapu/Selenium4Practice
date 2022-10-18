@@ -1,0 +1,15 @@
+version: "3"
+services:
+
+  nginx: 
+    image: nginx
+    container_name: nginxContainer
+
+  alpine:
+    image: alpine
+    entrypoint: "ping nginx"
+    depends_on: 
+       - nginx
+       
+         
+   

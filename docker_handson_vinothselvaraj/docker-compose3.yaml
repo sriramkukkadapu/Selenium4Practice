@@ -1,0 +1,22 @@
+version: "3"
+services:
+
+  nginx: 
+    image: nginx
+    container_name: nginxContainer
+
+  alpine:
+    image: alpine
+    entrypoint: "ping nginx"
+    depends_on: 
+       - nginx
+       
+  alpine2:
+    image: alpine
+    working_dir: /a/b/c
+    entrypoint: "wget nginx"
+    volumes:
+       - /Users/sriramku/eclipse-workspace/Selenium4Practice/docker_handson_vinothselvaraj:/a/b/c
+    depends_on: 
+       - nginx         
+   

@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import FrameworkWithoutPageFactory.Helper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Login {
+public class DeleteThroughUI_GoogleGroups {
 
 	public static void main(String args[]) throws Exception {
 		
@@ -48,7 +48,7 @@ public class Login {
 		
 		driver.get("https://groups.google.com/a/jobcurator.in/g/testingexpopeningssubscribed/members");
 		
-		helper.setValue(By.xpath("//input[@aria-label='Search members']"), "sriram.kukkadapu@gmail.com");
+		helper.setValue(By.xpath("//input[@aria-label='Search members']"), "bonagiritripura@gmail.com");
 		
 		helper.hitEnter(By.xpath("//input[@aria-label='Search members']"));
 		
@@ -60,22 +60,26 @@ public class Login {
 		
 //		js.executeScript("document.querySelectorAll(\"div[title='Select all']\")[0].click();");
 		
-		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).click();
-		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).sendKeys(Keys.TAB);
-		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).sendKeys(Keys.TAB);
-		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).sendKeys(Keys.TAB);
+//		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).click();
+//		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).sendKeys(Keys.TAB);
+//		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).sendKeys(Keys.TAB);
+//		driver.findElement(By.xpath("//div[@aria-label=\"Favourite group\"]")).sendKeys(Keys.TAB);
+//		
+//		WebElement selectAllBox = driver.switchTo().activeElement();
 		
-		WebElement selectAllBox = driver.switchTo().activeElement();
+//		selectAllBox.click();
 		
-		selectAllBox.click();
-		
-		helper.waitForElementDisplayed(By.xpath("//div[text()='1 selected']"));
+//		helper.waitForElementDisplayed(By.xpath("//div[text()='1 selected']"));
 		
 		//check if "1-Selected" message present
 		
 //		if(driver.findElements(By.xpath("//div[text()=\"1 selected\"]")).size()==0)
 //			throw new Exception("Issue ");
 //		
+		Thread.sleep(2000);
+		driver.findElements(By.xpath("//div[@aria-label='Group Members']/div[1]/div[1]/div[1]/div[1]/div[1]")).get(1).click();
+		
+		driver.findElements(By.xpath("//div[@aria-label='Remove member']")).get(0).click();
 		
 		Thread.sleep(10000);
 		

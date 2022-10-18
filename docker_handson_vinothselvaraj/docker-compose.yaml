@@ -1,0 +1,7 @@
+version: "2"
+services:
+  squares: 
+    image: sriramkukkadapu/squares
+    container_name: squareFinder
+    environment:
+      - NUMBER=5
