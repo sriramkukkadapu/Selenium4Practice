@@ -1,0 +1,89 @@
+Updated - Docker Selenium Grid
+Hi,
+
+If you are using latest version of selenium-java dependency, you might want to use these docker-compose files! Please choose one depends on the selenium-java dependency you have.
+
+========================
+Version 3.141.59
+========================
+
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.141.59
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.141.59
+    shm_size: '1gb'
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  firefox:
+    image: selenium/node-firefox:3.141.59
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+      
+========================      
+Version 4.1.0
+========================
+
+version: "3"
+services:
+  hub:
+    image: selenium/hub:4.1.0
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:4.1.0
+    shm_size: '2g'        
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  firefox:
+    image: selenium/node-firefox:4.1.0
+    shm_size: '2g'   
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+========================
+For M1-Mac users:
+It is a known issue that selenium grid does not work on Mac.  https://github.com/SeleniumHQ/selenium/issues/9733#issuecomment-896210058
+========================
+
+Work around for now:
+
+version: "3"
+services:
+  hub:
+    image: seleniarm/hub:4.1.2-20220227
+    ports:
+      - "4444:4444"
+  chrome:
+    image: seleniarm/node-chromium:4.1.2-20220227
+    shm_size: '2g'        
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  firefox:
+    image: seleniarm/node-firefox:4.1.2-20220227
+    shm_size: '2g'   
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443

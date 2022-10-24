@@ -4,6 +4,7 @@
   
   <test thread-count="5" verbose="2" name="Chrome test" parallel="methods">
   	<parameter name="browser" value="chrome"/>
+  	<parameter name="localorgrid" value="local"/>
     <classes >
 	    <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods"/> 
 	    <!-- <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase2"/> -->
@@ -12,6 +13,7 @@
   
   <test thread-count="5" verbose="2" name="Firefox test" parallel="methods">
   	<parameter name="browser" value="firefox"/>
+  	<parameter name="localorgrid" value="local"/>
     <classes  >
 	    <class name="FrameworkWithoutPageFactoryParallelMethods.TestCaseParallelMethods" /> 
 	    <!-- <class name="FrameworkWithoutPageFactoryParallelMethods.Testcase2"/> -->

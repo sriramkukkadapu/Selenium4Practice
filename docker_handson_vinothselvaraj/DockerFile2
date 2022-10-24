@@ -1,0 +1,35 @@
+# Get a alpine image that has openjdk
+FROM openjdk:18-ea-11-jdk-alpine3.15
+
+RUN apk add curl jq
+
+
+
+
+# Workspace
+WORKDIR /usr/share/eclipse-workspace
+
+
+# ADD jar to target location from host into this image
+ADD target/selenium-docker.jar 				selenium-docker.jar
+ADD target/selenium-docker-tests.jar 		selenium-docker-tests.jar
+ADD target/libs								libs
+
+
+# Add suite files, in case of other dependencies like .csv / .json / .xls add them too
+ADD docker_handson_vinothselvaraj/TestNG_Docker_Gird_Chrome_FireFox.xml 	TestNG_Docker_Gird_Chrome_FireFox.xml
+
+
+#Add health check script
+ADD docker_handson_vinothselvaraj/healthcheck.sh healthcheck.sh
+
+#BROWSER
+#HUB_HOST
+#MODULE
+
+# We moved this part to health check 
+# ENTRYPOINT java -cp "selenium-docker.jar:selenium-docker-tests.jar:libs/*" -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE
+
+ENTRYPOINT sh healthcheck.sh
+
+
