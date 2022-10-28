@@ -1,0 +1,77 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Selenium Grid Example - Faisal Khatri
+
+on:
+
+#  schedule:
+    # - cron:  '1 * * * *'
+#    - cron: '0 8 * * *'  #everday at 8 am    
+    
+  push:
+    branches: [ master ]
+  pull_request:
+    branches:
+      - master
+      - issue-*
+
+jobs:
+  build_and_test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout Git repository
+        uses: actions/checkout@v2
+
+      - name: Install Java and Maven
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+          cache: maven
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
+
+      - name: Install Firefox
+        uses: browser-actions/setup-firefox@latest
+        
+      - name: Start Selenium Grid Built in Vinoth Selvaraj Course
+        run: docker compose -f  ${{ github.workspace }}/docker_handson_vinothselvaraj/docker-compose-selenium-hub-grid-tests.yaml up --scale chrome=4 --scale firefox=4 -d
+
+
+      - name: Stop Docker that we started
+        run: docker-compose -f ${{ github.workspace }}/docker_handson_vinothselvaraj/docker-compose-selenium-hub-grid-tests.yaml down --remove-orphans
+
+      - name: Upload report artifact1
+        uses: actions/upload-artifact@v2
+        with: 
+          name: ${{ github.run_number }}-testng-report-upload1
+          path: ${{ github.workspace }}/docker_handson_vinothselvaraj/output
+          if-no-files-found: ignore        
+          retention-days: 2   
+          
+      - name: Upload report artifact2
+        uses: actions/upload-artifact@v2
+        with: 
+          name: ${{ github.run_number }}-testng-report-upload2
+          path: ${{ github.workspace }}/docker_handson_vinothselvaraj/output2
+          if-no-files-found: ignore        
+          retention-days: 2                  
+
+      - name: Deploy pages1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ${{ github.workspace }}/docker_handson_vinothselvaraj/output
+
+              
+      - name: Deploy pages2
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ${{ github.workspace }}/docker_handson_vinothselvaraj/output2  
+              
+                          
