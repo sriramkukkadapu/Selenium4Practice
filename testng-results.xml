@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-21T08:13:46 UTC" name="Suite" finished-at="2023-05-21T08:13:50 UTC" duration-ms="3799">
+  <suite started-at="2023-05-21T08:20:12 UTC" name="Suite" finished-at="2023-05-21T08:20:29 UTC" duration-ms="17897">
     <groups>
     </groups>
-    <test started-at="2023-05-21T08:13:46 UTC" name="Test" finished-at="2023-05-21T08:13:50 UTC" duration-ms="3799">
+    <test started-at="2023-05-21T08:20:12 UTC" name="Test" finished-at="2023-05-21T08:20:29 UTC" duration-ms="17897">
       <class name="Tests.WebTest">
-        <test-method signature="testGoogleSearchUsingSelenoid()[pri:0, instance:Tests.WebTest@55740540]" started-at="2023-05-21T08:13:46 UTC" name="testGoogleSearchUsingSelenoid" finished-at="2023-05-21T08:13:50 UTC" duration-ms="3752" status="PASS">
+        <test-method signature="testGoogleSearchUsingSelenoid()[pri:0, instance:Tests.WebTest@3e3047e6]" started-at="2023-05-21T08:20:12 UTC" name="testGoogleSearchUsingSelenoid" finished-at="2023-05-21T08:20:29 UTC" duration-ms="17870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogleSearchUsingSelenoid -->
