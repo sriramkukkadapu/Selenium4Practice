@@ -4,8 +4,8 @@ import java.util.Optional;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v104.network.Network;
-import org.openqa.selenium.devtools.v104.network.model.ConnectionType;
+//import org.openqa.selenium.devtools.v104.network.Network;
+//import org.openqa.selenium.devtools.v104.network.model.ConnectionType;
 //import org.openqa.selenium.devtools.v96.network.Network;
 //import org.openqa.selenium.devtools.v96.network.model.ConnectionType;
 import org.testng.annotations.AfterMethod;
@@ -36,9 +36,9 @@ public class EmulateSlowNetwork {
 		
 		DevTools devTools = driver.getDevTools();
 		devTools.createSession();
-		devTools.send(Network.emulateNetworkConditions(
-				false,150, 2500, 2000, 
-				Optional.of(ConnectionType.CELLULAR2G)));
+//		devTools.send(Network.emulateNetworkConditions(
+//				false,150, 2500, 2000, 
+//				Optional.of(ConnectionType.CELLULAR2G)));
 		
 		driver.get("https://www.amazon.in");
 		

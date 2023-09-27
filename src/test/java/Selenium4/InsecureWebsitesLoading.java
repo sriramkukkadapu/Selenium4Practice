@@ -12,7 +12,7 @@ import org.openqa.selenium.devtools.DevTools;
 //
 //import com.qeagle.devtools.protocol.types.log.LogEntry;
 //import org.openqa.selenium.devtools.v96.security.Security;
-import org.openqa.selenium.devtools.v103.security.Security;
+//import org.openqa.selenium.devtools.v103.security.Security;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -32,10 +32,10 @@ public class InsecureWebsitesLoading {
 			
 			devTools.createSession();
 			
-			devTools.send(Security.enable());
-			
-			//ignore certificates
-			devTools.send(Security.setIgnoreCertificateErrors(true));
+//			devTools.send(Security.enable());
+//			
+//			//ignore certificates
+//			devTools.send(Security.setIgnoreCertificateErrors(true));
 			
 			driver.get("https://expired.badssl.com/");
 			

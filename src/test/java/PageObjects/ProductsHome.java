@@ -26,8 +26,5 @@ public class ProductsHome {
 	public void clickOnSearchButton() {
 		searchButton.click();
 	}
-	
-	
-	
-	
+			
 }

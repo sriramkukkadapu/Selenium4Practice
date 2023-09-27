@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 public class ReadPDFFromURL {
   @Test
   public void f() throws IOException {
+
 	  /*========= We are using Apache PDFBox dependency ===========*/
 	  
 	  URL url = new URL("http://www.africau.edu/images/default/sample.pdf");
