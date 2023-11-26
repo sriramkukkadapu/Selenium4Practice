@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3439" started-at="2022-11-24T21:25:37 IST" finished-at="2022-11-24T21:25:40 IST">
+  <suite name="Default suite" duration-ms="1193" started-at="2023-10-01T06:26:20 IST" finished-at="2023-10-01T06:26:21 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3439" started-at="2022-11-24T21:25:37 IST" finished-at="2022-11-24T21:25:40 IST">
-      <class name="PDFExamples.ReadPDFFromURLNov2022">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:PDFExamples.ReadPDFFromURLNov2022@5c18298f]" name="beforeTest" is-config="true" duration-ms="2281" started-at="2022-11-24T21:25:37 IST" finished-at="2022-11-24T21:25:39 IST">
+    <test name="Default test" duration-ms="1193" started-at="2023-10-01T06:26:20 IST" finished-at="2023-10-01T06:26:21 IST">
+      <class name="Tests.DataProvider_Example">
+        <test-method status="PASS" signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.DataProvider_Example@64485a47]" name="testDataProvider" duration-ms="4" started-at="2023-10-01T06:26:21 IST" data-provider="dataProvider" finished-at="2023-10-01T06:26:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:PDFExamples.ReadPDFFromURLNov2022@5c18298f]" name="f" duration-ms="1026" started-at="2022-11-24T21:25:39 IST" finished-at="2022-11-24T21:25:40 IST">
+        </test-method> <!-- testDataProvider -->
+        <test-method status="PASS" signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.DataProvider_Example@64485a47]" name="testDataProvider" duration-ms="0" started-at="2023-10-01T06:26:21 IST" data-provider="dataProvider" finished-at="2023-10-01T06:26:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test12345]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:PDFExamples.ReadPDFFromURLNov2022@5c18298f]" name="tearDown" is-config="true" duration-ms="105" started-at="2022-11-24T21:25:40 IST" finished-at="2022-11-24T21:25:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- PDFExamples.ReadPDFFromURLNov2022 -->
+        </test-method> <!-- testDataProvider -->
+      </class> <!-- Tests.DataProvider_Example -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
