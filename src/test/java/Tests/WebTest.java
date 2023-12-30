@@ -26,5 +26,6 @@ public class WebTest {
         System.out.println("=========> Asserting the title of the page");
         System.out.println("Title of the page is: "+driver.getTitle());
         Assert.assertEquals(driver.getTitle(), "Google");
+        driver.quit();
     }
 }
