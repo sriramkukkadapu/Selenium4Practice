@@ -21,8 +21,9 @@ jobs:
       with:
          chrome-version: 120
     
-    - name: Get Installed Chrome Version
+    - name: Get Installed Chrome Version & Location
       run: chrome --version
+      run: which chrome 
      
     - name: Set up JDK 21
       uses: actions/setup-java@v2
