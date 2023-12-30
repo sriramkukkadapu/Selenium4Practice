@@ -37,7 +37,7 @@ public class DeleteThroughUI_GoogleGroups {
 		
 		helper.click(By.xpath("//span[text()='Next']"));
 		
-		helper.setValue(By.xpath("//input[@type='password']"), "Sriramk1");
+		helper.setValue(By.xpath("//input[@type='password']"), "Sr!r@mk1");
 		
 //		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Sriramk1");
 //		driver.findElement(By.xpath("//span[text()='Next']")).click();
@@ -46,7 +46,7 @@ public class DeleteThroughUI_GoogleGroups {
 		
 		Thread.sleep(3000);
 		
-		driver.get("https://groups.google.com/a/jobcurator.in/g/testingexpopeningssubscribed/members");
+		driver.get("https://groups.google.com/a/jobcurator.in/g/testingexpopeningssubscribed3/members");
 		
 		helper.setValue(By.xpath("//input[@aria-label='Search members']"), "bonagiritripura@gmail.com");
 		

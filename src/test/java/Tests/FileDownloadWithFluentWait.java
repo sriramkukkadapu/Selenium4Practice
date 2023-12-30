@@ -13,12 +13,17 @@ public class FileDownloadWithFluentWait {
     public static void main(String[] args) {
 
         WebDriver driver = new ChromeDriver();
+        String downloadPath = "/Users/sriramku/Downloads";
+        String fileName = "jenkins.msi";
+        
+        File file = new File(downloadPath, fileName);
+        if(file.exists()) {
+            file.delete();
+        }
+        
         driver.get("https://get.jenkins.io/windows-stable/2.426.1/jenkins.msi");
 
-        String downloadPath = "/Users/naveenautomationlabs/Downloads";
-        String fileName = "jenkins.msi";
 
-        File file = new File(downloadPath, fileName);
 
         FluentWait<File> wait = new FluentWait<File>(file)
                 .withTimeout(Duration.ofMinutes(5))

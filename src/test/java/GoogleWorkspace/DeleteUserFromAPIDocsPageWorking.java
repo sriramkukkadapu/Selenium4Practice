@@ -62,7 +62,7 @@ public class DeleteUserFromAPIDocsPageWorking {
 		String email;
 		while((email=br.readLine())!=null) {		
 		
-		helper.setValue(By.id("groupKey"),"testingexpopeningssubscribed@jobcurator.in");
+		helper.setValue(By.id("groupKey"),"testingexpopeningssubscribed3@jobcurator.in");
 		
 		helper.setValue(By.id("memberKey"),email);
 		
