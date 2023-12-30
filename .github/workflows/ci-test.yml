@@ -28,6 +28,9 @@ jobs:
         java-version: '21'
         distribution: 'adopt'
         cache: maven
+        
+    - name: Check Java version
+      run: java -version      
      
     - name: Run Tests with Maven command
       run: mvn clean test -Pweb  
