@@ -27,7 +27,7 @@ public class ReadPDFFromURLNov2022 {
      System.out.println("Execution started...");
      WebDriverManager.chromedriver().setup(); 
      ChromeOptions co = new ChromeOptions();
-     co.setHeadless(true);
+//     co.setHeadless(true);
      driver=new ChromeDriver(co); 
      driver.get("https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf");
      //here you can use URL("file://...") url as well

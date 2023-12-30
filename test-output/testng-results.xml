@@ -1,45 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1193" started-at="2023-10-01T06:26:20 IST" finished-at="2023-10-01T06:26:21 IST">
+  <suite started-at="2023-12-30T17:31:48 IST" name="Default suite" finished-at="2023-12-30T17:31:54 IST" duration-ms="5624">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1193" started-at="2023-10-01T06:26:20 IST" finished-at="2023-10-01T06:26:21 IST">
-      <class name="Tests.DataProvider_Example">
-        <test-method status="PASS" signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.DataProvider_Example@64485a47]" name="testDataProvider" duration-ms="4" started-at="2023-10-01T06:26:21 IST" data-provider="dataProvider" finished-at="2023-10-01T06:26:21 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test1@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test1234]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-12-30T17:31:48 IST" name="Default test" finished-at="2023-12-30T17:31:54 IST" duration-ms="5624">
+      <class name="Tests.WebTest">
+        <test-method signature="testGoogleSearchUsingSelenoid()[pri:0, instance:Tests.WebTest@4d465b11]" started-at="2023-12-30T17:31:48 IST" name="testGoogleSearchUsingSelenoid" finished-at="2023-12-30T17:31:54 IST" duration-ms="5530" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataProvider -->
-        <test-method status="PASS" signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.DataProvider_Example@64485a47]" name="testDataProvider" duration-ms="0" started-at="2023-10-01T06:26:21 IST" data-provider="dataProvider" finished-at="2023-10-01T06:26:21 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test2@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDataProvider -->
-      </class> <!-- Tests.DataProvider_Example -->
+        </test-method> <!-- testGoogleSearchUsingSelenoid -->
+      </class> <!-- Tests.WebTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
