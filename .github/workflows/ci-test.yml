@@ -18,6 +18,8 @@ jobs:
     
     - name: Install chrome Latest
       uses: browser-actions/setup-chrome@v1 
+      with:
+         chrome-version: 120
     
     - name: Get Installed Chrome Version
       run: chrome --version
