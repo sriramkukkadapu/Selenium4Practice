@@ -16,8 +16,10 @@ jobs:
     - name: Checkout the repo
       uses: actions/checkout@v2
     
-    - name: Installed chrome version
+    - name: Install chrome Latest
       uses: browser-actions/setup-chrome@v1 
+    
+    - name: Get Installed Chrome Version
       run: chrome --version
      
     - name: Set up JDK 21
