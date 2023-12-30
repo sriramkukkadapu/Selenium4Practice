@@ -10,10 +10,10 @@ on:
 #    - cron: '0 8 * * *'  #everday at 8 am    
     
   push:
-    branches: [ master ]
+    branches: [ master_disabled ]
   pull_request:
     branches:
-      - master
+      - master_disabled
       - issue-*
 
 jobs:
