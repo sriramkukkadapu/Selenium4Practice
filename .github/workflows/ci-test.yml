@@ -18,8 +18,8 @@ jobs:
     
     - name: Install chrome Latest
       uses: browser-actions/setup-chrome@v1 
-      with:
-         chrome-version: 120
+#      with:
+#         chrome-version: 120
     
     - name: Get Installed Chrome Version & Location
       run: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
