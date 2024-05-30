@@ -1,5 +1,8 @@
 package GoogleWorkspace;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -17,7 +20,7 @@ public class DeleteThroughUI_GoogleGroups {
 
 	public static void main(String args[]) throws Exception {
 		
-		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -48,9 +51,21 @@ public class DeleteThroughUI_GoogleGroups {
 		
 		driver.get("https://groups.google.com/a/jobcurator.in/g/testingexpopeningssubscribed3/members");
 		
-		helper.setValue(By.xpath("//input[@aria-label='Search members']"), "bonagiritripura@gmail.com");
+		File file = new File("DeleteMembersFromGroup.txt");
+        FileReader fr=new FileReader(file);
+        BufferedReader br=new BufferedReader(fr);
+        
+        int count=1;
+        String email;
+        while((email=br.readLine())!=null) {    
+            System.out.println("Deleting id: ["+count + "] - " + email);
+            
+        helper.clear(By.xpath("//input[@aria-label='Search members']"));
+		
+		helper.setValue(By.xpath("//input[@aria-label='Search members']"), "srihariambadipudi90@gmail.com");
 		
 		helper.hitEnter(By.xpath("//input[@aria-label='Search members']"));
+
 		
 		//helper.click(By.xpath("//div[@aria-selected='false']//div[@role=\"columnheader']//div[@Role='checkbox']"));
 //		helper.click(By.xpath("//div[@title='Select all']//div[@class='uHMk6b fsHoPb']"));
@@ -79,9 +94,12 @@ public class DeleteThroughUI_GoogleGroups {
 		Thread.sleep(2000);
 		driver.findElements(By.xpath("//div[@aria-label='Group Members']/div[1]/div[1]/div[1]/div[1]/div[1]")).get(1).click();
 		
-		driver.findElements(By.xpath("//div[@aria-label='Remove member']")).get(0).click();
+//		driver.findElements(By.xpath("//div[@aria-label='Remove member']")).get(1).click();
 		
-		Thread.sleep(10000);
+//		driver.findElements(By.xpath("//span[text()=\"OK\"]")).get(1).click();
+		
+		Thread.sleep(2000);
+        }
 		
 		driver.quit();
 	}

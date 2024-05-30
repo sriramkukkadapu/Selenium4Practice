@@ -74,6 +74,11 @@ public class Helper {
 		driver.findElement(by).sendKeys(Keys.RETURN);
 	}
 	
+	   public void clear(By by) {
+	        waitForElementDisplayed(by);
+	        waitForElementToBeClickable(by);
+	        driver.findElement(by).clear();
+	    }
 	
 	
 }

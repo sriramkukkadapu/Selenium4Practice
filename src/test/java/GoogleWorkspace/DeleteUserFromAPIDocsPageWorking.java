@@ -20,7 +20,7 @@ public class DeleteUserFromAPIDocsPageWorking {
 
 	public static void main(String args[]) throws Exception {
 		
-		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -40,7 +40,7 @@ public class DeleteUserFromAPIDocsPageWorking {
 		
 		helper.click(By.xpath("//span[text()='Next']"));
 		
-		helper.setValue(By.xpath("//input[@type='password']"), "Sriramk1");
+		helper.setValue(By.xpath("//input[@type='password']"), "Sr!r@mk1");
 		
 //		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Sriramk1");
 //		driver.findElement(By.xpath("//span[text()='Next']")).click();
@@ -53,27 +53,58 @@ public class DeleteUserFromAPIDocsPageWorking {
 		
 		WebElement frameEle = driver.findElement(By.xpath("//iframe[contains(@src,'methodId=directory.members.delete')]"));
 	
+		
 		driver.switchTo().frame(frameEle);
 		
 		File file = new File("DeleteMembersFromGroup.txt");
 		FileReader fr=new FileReader(file);
 		BufferedReader br=new BufferedReader(fr);
-		  
+		
+		int count=1;
 		String email;
-		while((email=br.readLine())!=null) {		
+		while((email=br.readLine())!=null) {	
+		    System.out.println("Deleting id: ["+count + "] - " + email);
 		
-		helper.setValue(By.id("groupKey"),"testingexpopeningssubscribed3@jobcurator.in");
-		
+		helper.setValue(By.id("groupKey"),"testingexpopeningssubscribed1@jobcurator.in");
 		helper.setValue(By.id("memberKey"),email);
-		
 		helper.click(By.id("execute"));
 		
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
+		
+		
+//        Object[] windows =  driver.getWindowHandles().toArray();
+//
+//        String mainWindowHandle = windows[0].toString();        
+//        String loginWindowHandle = windows[1].toString();
+//        
+//        System.out.println(driver.getTitle());
+//        driver.switchTo().window(loginWindowHandle);
+//        System.out.println(driver.getTitle());
+		
+//        System.exit(0);
+        
+        
+		Thread.sleep(300);
+		
+		helper.setValue(By.id("groupKey"),"testingexpopeningssubscribed2@jobcurator.in");
+		helper.setValue(By.id("memberKey"),email);
+		helper.click(By.id("execute"));
+	   
+		Thread.sleep(300);
+	        
+		helper.setValue(By.id("groupKey"),"testingexpopeningssubscribed3@jobcurator.in");
+		helper.setValue(By.id("memberKey"),email);
+		helper.click(By.id("execute"));
+		
+		Thread.sleep(300);
+		
+		count++;
 		
 		}
 //		
+		System.out.println("Completed");
 		
-		Thread.sleep(10000);
+//		Thread.sleep(10000);
 		
 		driver.quit();
 	}
