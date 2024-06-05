@@ -14,18 +14,18 @@ Senior Consultant - Data Engineer
 Bangalore, India
 Senior Consultant - Infrastructure Consultant
 Bangalore, India
-Senior Consultant - Machine Learning Engineer
+Lead Consultant: Application Developer
 Bangalore, India
 Lead Consultant:Infrastructure Consultant
-Bangalore, India
-Marketing Data Analyst
-Bangalore, India
-Senior Consultant - Tech Business Analyst
 Bangalore, India
 Senior Consultant - Infrastructure Consultant
 Hyderabad, India
 Lead Consultant:Infrastructure Consultant
 Chennai, India
+Lead Consultant: Application Developer
+Chennai, India
+Senior Consultant - Developer
+Gurgaon, India
 Lead Consultant Data Engineer
 Chennai, India
 Senior Consultant - Data Engineer
@@ -42,8 +42,10 @@ Senior Consultant - Developer
 Chennai, India
 Senior Consultant - Infrastructure Consultant (Azure)
 Chennai, India
-Lead Consultant: Application Developer [.NET ]
+Lead Consultant: Application Developer [.NET ] [work from office /client: HYD]
 Hyderabad, India
+Senior Consultant - Infrastructure Consultant
+Mumbai, India
 Lead Consultant:Infrastructure Consultant
 Hyderabad, India
 Senior Consultant - Infrastructure Consultant
@@ -52,8 +54,6 @@ Lead Consultant Data Engineer
 Pune, India
 Lead Consultant:Business Analyst
 Mumbai, India
-Senior Consultant - System Support Engineer
-Pune, India
 Principal Consultant CX Strategist
 Mumbai, India
 Lead Consultant:Client Principal (BFSI)
@@ -77,4 +77,6 @@ Gurgaon, India
 Lead Consultant Data Engineer
 Hyderabad, India
 Lead Consultant:Infrastructure Consultant
+Mumbai, India
+Lead Project Manager
 Mumbai, India

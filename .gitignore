@@ -1,3 +1,4 @@
 target/*
 test-output/*
 /target/
+node_modules/*
