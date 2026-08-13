@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-30T21:19:56 IST" name="Default suite" finished-at="2023-12-30T21:20:01 IST" duration-ms="5507">
+  <suite started-at="2025-05-06T10:26:51 IST" name="Suite" finished-at="2025-05-06T10:26:51 IST" duration-ms="18">
     <groups>
     </groups>
-    <test started-at="2023-12-30T21:19:56 IST" name="Default test" finished-at="2023-12-30T21:20:01 IST" duration-ms="5507">
-      <class name="Tests.WebTest">
-        <test-method signature="testGoogleSearchUsingSelenoid()[pri:0, instance:Tests.WebTest@3bf9ce3e]" started-at="2023-12-30T21:19:56 IST" name="testGoogleSearchUsingSelenoid" finished-at="2023-12-30T21:20:01 IST" duration-ms="5413" status="PASS">
+    <test started-at="2025-05-06T10:26:51 IST" name="Test" finished-at="2025-05-06T10:26:51 IST" duration-ms="18">
+      <class name="iTestContextExample.Class2">
+        <test-method signature="getCustomerId(org.testng.ITestContext)[pri:0, instance:iTestContextExample.Class2@8f4ea7c]" started-at="2025-05-06T10:26:51 IST" name="getCustomerId" finished-at="2025-05-06T10:26:51 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6aaceffd]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGoogleSearchUsingSelenoid -->
-      </class> <!-- Tests.WebTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- getCustomerId -->
+      </class> <!-- iTestContextExample.Class2 -->
+      <class name="iTestContextExample.Class1">
+        <test-method signature="setCustomerId(org.testng.ITestContext)[pri:0, instance:iTestContextExample.Class1@3a93b025]" started-at="2025-05-06T10:26:51 IST" name="setCustomerId" finished-at="2025-05-06T10:26:51 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6aaceffd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCustomerId -->
+      </class> <!-- iTestContextExample.Class1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
